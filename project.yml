@@ -1,0 +1,28 @@
+name: PuenteVR
+options:
+  bundleIdPrefix: com.puentevr
+targets:
+  PuenteVR:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources:
+      - PuenteVR
+    info:
+      path: PuenteVR/Info.plist
+      properties:
+        CFBundleDisplayName: PuenteVR
+        UILaunchStoryboardName: LaunchScreen
+        UIRequiredDeviceCapabilities: [armv7]
+        UIStatusBarHidden: true
+        UIViewControllerBasedStatusBarAppearance: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationLandscapeLeft]
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.puentevr.app
+        SWIFT_VERSION: "5.0"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
